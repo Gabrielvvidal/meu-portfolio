@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Manrope:wght@300;400&display=swap');
+/*font-family: 'Josefin Sans', sans-serif;*/
+/*font-family: 'Manrope', sans-serif;*/
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #171717;
+}
+
+/*--INICÍO VÁRIOS SELETORES--*/
+#navbar-container, #section-1, #section-2, #section-3, .skill-box-container, .box, #section-4, .skill-box, #section-form, #send-email{
+    display: flex;
+    align-items: center;
+}
+
+#section-form, #section-1 ,#section-2, .skill-box-container, #section-4, #send-email {justify-content: center;}
+
+.navbar-logo a, .navbar-pg-nav ul li, .see-more-text, .box-title, .btn, #section-form, #footer, .name-skill, #about-me, #btn-zap, input[type=text], input[type=email], input[type=text]::placeholder, input[type=email]::placeholder, label, textarea::placeholder, textarea,  .pg-nav-responsive ul li a{font-family: 'Manrope', sans-serif;}
+
+#frontend-title, #developer-title {font-family: 'Josefin Sans', sans-serif;}
+
+.navbar-pg-nav ul li a, .navbar-logo a:hover, #developer-title, #footer, .box-title, .name-skill, #about-me, .link-btn, label, input[type=text], input[type=email], input[type=text]::placeholder, input[type=email]::placeholder, textarea, textarea::placeholder {color: #ededed;}
+
+.navbar-pg-nav ul li a:hover, .navbar-logo a, #frontend-title, .see-more-text {color: #ff0000;}
+
+#developer-title, .scroll, #section-4, #about-me {text-align: center;}
+
+.box, .skill-box, .btn, .project-box, #btn-zap, #send-email, textarea {border: 2px solid #ededed;}
+
+.skill-box-container, .skill-box {height: 100px;}
+
+.skill-box, .box {flex-direction: column;}
+
+.skill-box-container {margin-top: 35px;}
+
+.navbar-logo a, .navbar-pg-nav ul li a, .link-btn {text-decoration: none;}
+
+.navbar-pg-nav ul li a, .navbar-logo a, #navbar-container, .btn, .box:hover, .skill-box:hover, .box, .project-box, #btn-zap {transition: 0.3s;}
+
+#photo-perfil, .project-box{
+    width: 180px;
+    height: 180px;
+}
+
+#btn-zap, .box{
+    border-radius: 10px;
+}
+/*--FIM VÁRIOS SELETORES--*/
+
+/*--INICÍO DO ESTILO DA NAVBAR--*/
+#navbar-container{
+    height: 8vh;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9998;
+    background-color: #171717;
+}
+
+.pg-nav-responsive{
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
+    display: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.open-menu{
+    display: block;
+}
+
+.pg-nav-responsive ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.pg-nav-responsive ul li a{
+    color: #ededed;
+    text-decoration: none;
+}
+
+.box, .btn, #btn-zap, #send-email {background-color: #1e1e1e;}
+
+.navbar-logo a, .navbar-pg-nav ul li a {padding: 10px;}
+
+.navbar-logo a {font-size: 1.5em;}
+
+.navbar-pg-nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar-logo a, .navbar-pg-nav ul li {font-weight: 400;}
+
+#hamburguer {
+    display: none;
+    transition: 0.5s;
+}
+
+.line{
+    margin: 7px;
+    width: 30px;
+    height: 3px;
+    background-color: #ededed;
+}
+/*--FIM DO ESTILO DA NAVBAR--*/
+
+/*INÍCIO DO ESTILO DA SECTION-FORM*/
+#section-form{
+    height: 790px;
+}
+
+#send-email:hover{
+    border: 2px solid #ff0000;
+}
+
+#send-email{
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 420px;
+    height: 600px;
+    padding: 20px;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+input[type=text], input[type=email]{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ededed;
+    padding: 4px;
+    transition: 0.3s;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder, textarea::placeholder{
+    opacity: 0.7;
+}
+
+label{
+    text-align: center;
+    font-size: 20px;
+    display: block;
+}
+
+textarea{
+    width: 300px;
+    height: 220px;
+    padding: 10px;
+    background: transparent;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+textarea::-webkit-scrollbar-track{
+	background: transparent;
+}
+
+textarea::-webkit-scrollbar{
+	width: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+	border-radius: 200px;
+	background-color: #ededed;
+}
+
+input[type=text]:focus, input[type=email]:focus{
+    border-bottom: 2px solid #ff0000;
+}
+
+textarea:focus{
+    border: 2px solid #ff0000;
+}
+
+.required{
+    color: #ff0000;
+}
+
+#btn-zap{
+    width: 420px;
+    height: 50px;
+}
+/*FIM DO ESTILO DA SECTION-FORM*/
+
+/*INÍCIO DO ESTILO DA SECTION-1*/
+#section-1{
+    margin-top: 20px;
+    height: 700px;
+}
+
+#frontend-title, #developer-title {cursor: default;} 
+
+#frontend-title {font-size: 170px;}
+
+#developer-title {font-size: 128px;}
+/*FIM DO ESTILO DA SECTION-1*/
+
+/*INÍCIO DO ESTILO DA SECTION-2*/
+#section-2 {height: 138px;}
+
+.name-skill, #frontend-title, #developer-title, .box-title, #about-me, .see-more-text{
+    cursor: default;
+    user-select: none;
+}
+
+.see-more-text {font-weight: 300;}
+/*FIM DO ESTILO DA SECTION-2*/
+
+/*INÍCIO DO ESTILO DA SECTION-3*/
+#section-3{
+    height: 874px;
+    justify-content: space-evenly;
+}
+/*FIM DO ESTILO DA SECTION-3*/
+
+/*INÍCIO DO ESTILO DAS BOXES*/
+.box{
+    flex: 0 0 380px;
+    height: 600px;
+}
+
+.box:hover {transform: translateY(-10px);}
+
+.box-title{
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.skill-box:nth-child(2), .skill-box:nth-child(3) {margin-left: 20px;}
+
+.project-box, .skill-box{border-radius: 2px;}
+
+.skill-box{width: 100px;}
+
+.img-box, #photo-perfil {margin-top: 20px;}
+
+.skill-img {margin: 8px 0 10px 0;}
+
+#photo-perfil{
+    background-image: url('../resources/img/perfil.jfif');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#about-me {
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 330px;
+}
+
+.btn{
+    border-radius: 5px;
+    width: 240px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.btn:hover, .box:hover, .skill-box:hover, .project-box:hover, #btn-zap:hover {border: 2px solid #ff0000;}
+
+.link-btn {display: block;}
+
+.project-box {margin-top: 30px;}
+/*FIM DO ESTILO DAS BOXES*/
+
+/*INÍCIO DO ESTILO DA SECTION-4*/
+#section-4 {height: 59px;}
+
+#footer {margin-left: 10px;}
+/*FIM DO ESTILO DA SECTION-4*/
+
+/*INÍCIO LAYOUT RESPONSIVO*/
+@media (max-width: 1180px){
+    body {background-color: #171717;}
+
+    #section-1 {height: 589px;}
+
+    #section-2 {height: 120px;}
+
+    #section-3 {
+        height: 2000px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        width: 450px;
+        height: 800px;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    #photo-perfil, .img-box {margin-top: 0;}
+}
+
+@media (max-width: 1048px){
+    #section-1{height: 591px;}
+
+    #frontend-title {font-size: 160px;}
+
+    #developer-title {font-size: 120px;}
+}
+
+@media (max-width: 987px){
+    #frontend-title {font-size: 150px;}
+
+    #developer-title {font-size: 115px;}
+}
+
+@media (max-width: 925px){
+    #frontend-title {font-size: 130px;}
+
+    #developer-title {font-size: 105px;}
+}
+
+@media (max-width: 806px){
+    #frontend-title {font-size: 120px;}
+
+    #developer-title {font-size: 95px;}
+}
+
+@media (max-width: 744px){
+    #frontend-title {font-size: 100px;}
+
+    #developer-title {font-size: 75px;}
+}
+
+@media (max-width: 623px){
+    #frontend-title {font-size: 80px;}
+
+    #developer-title {font-size: 50px;}
+
+    .navbar-pg-nav {display: none;}
+
+    #navbar-container{
+        transition: none;
+    }
+
+    #navbar-container:hover{
+        background-color: #171717;
+    }
+
+    #hamburguer {display: block;}
+}
+
+@media (max-width: 502px){
+    #frontend-title {font-size: 75px;}
+}
+
+@media (max-width: 493px){
+    #frontend-title {font-size: 70px;}
+    
+    .see-more-text {font-size: 19px;}
+
+    .box {
+        width: 350px;
+        height: 600px;
+    }
+
+    .skill-box {width: 90px;}
+}
+
+@media (max-width: 466px){
+    #footer {font-size: 16px;}
+}
+
+@media (max-width: 426px){
+    #frontend-title {font-size: 60px;}
+}
+/*FIM LAYOUT RESPONSIVO*/
